@@ -101,10 +101,14 @@ class InterfaceController: WKInterfaceController {
     }
   }
   
-  
   @IBAction func backspace() {
-    currentHistory = "\(currentHistory.dropLast())"
-    historyLabel.setText(currentHistory)
+    if (currentHistory.last == " "){
+      currentHistory = "\(currentHistory.dropLast().dropLast().dropLast())"
+      historyLabel.setText(currentHistory)
+    } else {
+      currentHistory = "\(currentHistory.dropLast())"
+      historyLabel.setText(currentHistory)
+    }
     if currentHistory == "" {
       resultLabel.setText("")
     }

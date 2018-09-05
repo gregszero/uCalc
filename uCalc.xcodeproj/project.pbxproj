@@ -616,7 +616,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gregorymendes.uCalc.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gregorymendes.ucalc.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -639,7 +639,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gregorymendes.uCalc.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gregorymendes.ucalc.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -659,7 +659,7 @@
 				DEVELOPMENT_TEAM = 253VF8J9M2;
 				IBSC_MODULE = uCalc_WatchKit_Extension;
 				INFOPLIST_FILE = "uCalc WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gregorymendes.uCalc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gregorymendes.ucalc.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -679,7 +679,7 @@
 				DEVELOPMENT_TEAM = 253VF8J9M2;
 				IBSC_MODULE = uCalc_WatchKit_Extension;
 				INFOPLIST_FILE = "uCalc WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gregorymendes.uCalc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gregorymendes.ucalc.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -701,7 +701,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gregorymendes.uCalc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gregorymendes.ucalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -720,7 +720,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gregorymendes.uCalc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gregorymendes.ucalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
