@@ -23,81 +23,91 @@ class InterfaceController: WKInterfaceController {
   var currentHistory: String = ""
   
   override func awake(withContext context: Any?) {
-        super.awake(withContext: context)
-    }
+    super.awake(withContext: context)
+  }
     
-    override func willActivate() {
-        super.willActivate()
+  override func willActivate() {
+      super.willActivate()
+    if let hist = UserDefaults.standard.string(forKey: "history") {
+      currentHistory = hist
+      historyLabel.setText(currentHistory)
+      resultLabel.setText(Calculator.calculate(currentHistory: currentHistory))
     }
-    
-    override func didDeactivate() {
-        super.didDeactivate()
-    }
+  }
+  
+  override func didDeactivate() {
+    super.didDeactivate()
+    historyLabel.setText("")
+    resultLabel.setText("")
+  }
   
   @IBAction func one() {
     currentHistory = "\(currentHistory)1"
     historyLabel.setText(currentHistory)
-    calculate()
+    resultLabel.setText(Calculator.calculate(currentHistory: currentHistory))
   }
   
   @IBAction func two() {
     currentHistory = "\(currentHistory)2"
     historyLabel.setText(currentHistory)
-    calculate()
+    resultLabel.setText(Calculator.calculate(currentHistory: currentHistory))
   }
   
   @IBAction func three() {
     currentHistory = "\(currentHistory)3"
     historyLabel.setText(currentHistory)
-    calculate()
+    resultLabel.setText(Calculator.calculate(currentHistory: currentHistory))
   }
   
   @IBAction func four() {
     currentHistory = "\(currentHistory)4"
     historyLabel.setText(currentHistory)
-    calculate()
+    resultLabel.setText(Calculator.calculate(currentHistory: currentHistory))
   }
   
   @IBAction func five() {
     currentHistory = "\(currentHistory)5"
     historyLabel.setText(currentHistory)
-    calculate()
+    resultLabel.setText(Calculator.calculate(currentHistory: currentHistory))
   }
   
   @IBAction func six() {
     currentHistory = "\(currentHistory)6"
     historyLabel.setText(currentHistory)
-    calculate()
+    resultLabel.setText(Calculator.calculate(currentHistory: currentHistory))
   }
   
   @IBAction func seven() {
     currentHistory = "\(currentHistory)7"
     historyLabel.setText(currentHistory)
-    calculate()
+    resultLabel.setText(Calculator.calculate(currentHistory: currentHistory))
   }
   
   @IBAction func eight() {
     currentHistory = "\(currentHistory)8"
     historyLabel.setText(currentHistory)
-    calculate()
+    resultLabel.setText(Calculator.calculate(currentHistory: currentHistory))
   }
   
   @IBAction func nine() {
     currentHistory = "\(currentHistory)9"
     historyLabel.setText(currentHistory)
-    calculate()
+    resultLabel.setText(Calculator.calculate(currentHistory: currentHistory))
   }
   
   @IBAction func zero() {
     currentHistory = "\(currentHistory)0"
     historyLabel.setText(currentHistory)
-    calculate()
+    resultLabel.setText(Calculator.calculate(currentHistory: currentHistory))
   }
   
   @IBAction func comma() {
-    if (differentFromSpecial()){
-      currentHistory = "\(currentHistory)."
-      historyLabel.setText(currentHistory)
+    if (currentHistory.last != "."){
+      if (Calculator.differentFromSpecial(currentHistory: currentHistory)){
+        currentHistory = "\(currentHistory)."
+        historyLabel.setText(currentHistory)
+        Calculator.saveHistory(currentHistory: currentHistory)
+      }
     }
   }
   
@@ -111,84 +121,48 @@ class InterfaceController: WKInterfaceController {
     }
     if currentHistory == "" {
       resultLabel.setText("")
+      Calculator.saveHistory(currentHistory: currentHistory)
     }
-    calculate()
+    resultLabel.setText(Calculator.calculate(currentHistory: currentHistory))
   }
   
   @IBAction func plus() {
-    if (differentFromSpecial()){
+    if (Calculator.differentFromSpecial(currentHistory: currentHistory)){
       currentHistory = "\(currentHistory) + "
       historyLabel.setText(currentHistory)
+      Calculator.saveHistory(currentHistory: currentHistory)
     }
   }
   
   @IBAction func minus() {
-    if (differentFromSpecial()){
+    if (Calculator.differentFromSpecial(currentHistory: currentHistory)){
       currentHistory = "\(currentHistory) - "
       historyLabel.setText(currentHistory)
+      Calculator.saveHistory(currentHistory: currentHistory)
     }
   }
   
   @IBAction func multiply() {
-    if (differentFromSpecial()){
+    if (Calculator.differentFromSpecial(currentHistory: currentHistory)){
       currentHistory = "\(currentHistory) x "
       historyLabel.setText(currentHistory)
+      Calculator.saveHistory(currentHistory: currentHistory)
     }
   }
   
   @IBAction func divide() {
-    if (differentFromSpecial()){
+    if (Calculator.differentFromSpecial(currentHistory: currentHistory)){
       currentHistory = "\(currentHistory) ÷ "
       historyLabel.setText(currentHistory)
+      Calculator.saveHistory(currentHistory: currentHistory)
     }
   }
   
   
-  @IBAction func parentesisLeft() {
-    currentHistory = "\(currentHistory)("
-    historyLabel.setText(currentHistory)
+  override func contextForSegue(withIdentifier segueIdentifier: String) -> Any? {
+    print(segueIdentifier)
+    return nil
   }
   
-  @IBAction func parentesisRight() {
-    currentHistory = "\(currentHistory))"
-    historyLabel.setText(currentHistory)
-  }
-  
-  @IBAction func pi() {
-    currentHistory = "\(currentHistory)π"
-    historyLabel.setText(currentHistory)
-    calculate()
-  }
-  
-  @IBAction func percent() {
-    if (differentFromSpecial()){
-      currentHistory = "\(currentHistory)%"
-      historyLabel.setText(currentHistory)
-    }
-  }
-  
-  func differentFromSpecial() -> Bool {
-    if (currentHistory.last != nil && currentHistory.last != "+" &&
-      currentHistory.last != "-" && currentHistory.last != "x" &&
-      currentHistory.last != "," && currentHistory.last != "÷" &&
-      currentHistory.last != " "){
-      return true
-    }
-    return false
-  }
-  
-  func calculate() {
-    do {
-      let result = try Expression(currentHistory
-        .replacingOccurrences(of: "÷", with: "/")
-        .replacingOccurrences(of: "x", with: "*")
-        .replacingOccurrences(of: "π", with: " pi "))
-        .evaluate()
-      resultLabel.setText("\(result)")
-      print("Result: \(result)")
-    } catch {
-      print("Error: \(error)")
-    }
-  }
   
 }

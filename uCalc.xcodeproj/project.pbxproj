@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		376E718C21408E0F00C4471B /* ExtrasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376E718B21408E0F00C4471B /* ExtrasController.swift */; };
+		376E71912140903100C4471B /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376E71902140903100C4471B /* Calculator.swift */; };
 		378D2EBD213F67BB00D2C8D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D2EBC213F67BB00D2C8D6 /* AppDelegate.swift */; };
 		378D2EBF213F67BB00D2C8D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D2EBE213F67BB00D2C8D6 /* ViewController.swift */; };
 		378D2EC2213F67BB00D2C8D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378D2EC0213F67BB00D2C8D6 /* Main.storyboard */; };
@@ -68,6 +70,8 @@
 
 /* Begin PBXFileReference section */
 		1575816B8E14CA831C2B890D /* Pods-uCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uCalc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uCalc/Pods-uCalc.debug.xcconfig"; sourceTree = "<group>"; };
+		376E718B21408E0F00C4471B /* ExtrasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtrasController.swift; sourceTree = "<group>"; };
+		376E71902140903100C4471B /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		378D2EB9213F67BB00D2C8D6 /* uCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		378D2EBC213F67BB00D2C8D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		378D2EBE213F67BB00D2C8D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -183,10 +187,12 @@
 		378D2EDE213F67BD00D2C8D6 /* uCalc WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				378D2EDF213F67BD00D2C8D6 /* InterfaceController.swift */,
 				378D2EE1213F67BD00D2C8D6 /* ExtensionDelegate.swift */,
+				378D2EDF213F67BD00D2C8D6 /* InterfaceController.swift */,
+				376E718B21408E0F00C4471B /* ExtrasController.swift */,
 				378D2EE3213F67BE00D2C8D6 /* Assets.xcassets */,
 				378D2EE5213F67BE00D2C8D6 /* Info.plist */,
+				376E71902140903100C4471B /* Calculator.swift */,
 			);
 			path = "uCalc WatchKit Extension";
 			sourceTree = "<group>";
@@ -442,6 +448,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				378D2EE2213F67BD00D2C8D6 /* ExtensionDelegate.swift in Sources */,
+				376E71912140903100C4471B /* Calculator.swift in Sources */,
+				376E718C21408E0F00C4471B /* ExtrasController.swift in Sources */,
 				378D2EE0213F67BD00D2C8D6 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -610,6 +618,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 253VF8J9M2;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = "uCalc WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -633,6 +642,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 253VF8J9M2;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = "uCalc WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -653,7 +663,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7D240676756B4144EB9965FB /* Pods-uCalc WatchKit App.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 253VF8J9M2;
@@ -673,7 +683,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E5F7D83EDADC9C4F6D42E31 /* Pods-uCalc WatchKit App.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 253VF8J9M2;

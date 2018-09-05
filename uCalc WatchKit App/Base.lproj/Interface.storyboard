@@ -14,11 +14,11 @@
             <objects>
                 <controller title="uCalc" fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="uCalc_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="1" height="18" alignment="left" textAlignment="right" id="hUf-g3-ghw" userLabel="Result">
+                        <label width="1" height="18" alignment="left" textAlignment="right" minimumScaleFactor="0.20000000000000001" id="hUf-g3-ghw" userLabel="Result">
                             <accessibilityTraits key="accessibilityTraits" updatesFrequently="YES"/>
                             <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                         </label>
-                        <label width="1" height="10" alignment="left" textAlignment="right" id="UAV-cw-HJu" userLabel="History">
+                        <label width="1" height="10" alignment="left" textAlignment="right" minimumScaleFactor="0.80000000000000004" id="UAV-cw-HJu" userLabel="History">
                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                         </label>
@@ -143,47 +143,70 @@
                                 </button>
                             </items>
                         </group>
-                        <group width="1" alignment="left" id="igB-SO-nuj">
+                    </items>
+                    <connections>
+                        <outlet property="historyLabel" destination="UAV-cw-HJu" id="NnF-4M-DaQ"/>
+                        <outlet property="resultLabel" destination="hUf-g3-ghw" id="M1p-n8-r3i"/>
+                        <segue destination="dQg-RE-cQQ" kind="relationship" relationship="nextPage" id="CJZ-ed-928"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="29"/>
+        </scene>
+        <!--Extras Controller-->
+        <scene sceneID="hr1-RR-g2z">
+            <objects>
+                <controller id="dQg-RE-cQQ" customClass="ExtrasController" customModule="uCalc_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="18" alignment="left" textAlignment="right" minimumScaleFactor="0.20000000000000001" id="NiK-xv-x4P" userLabel="Result">
+                            <accessibilityTraits key="accessibilityTraits" updatesFrequently="YES"/>
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label width="1" height="10" alignment="left" textAlignment="right" minimumScaleFactor="0.80000000000000004" id="Ufe-fY-ip9" userLabel="History">
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <group width="1" alignment="left" id="pr6-GR-3rR">
                             <items>
-                                <button width="0.25" height="28" alignment="left" title="(" id="K1p-eF-wCY">
+                                <button width="0.25" height="28" alignment="left" title="(" id="aPi-dE-afb">
                                     <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <variation key="device=watch42mm" height="30"/>
                                     <connections>
-                                        <action selector="parentesisLeft" destination="AgC-eL-Hgc" id="3uv-Td-APC"/>
+                                        <action selector="parentesisLeft" destination="dQg-RE-cQQ" id="HPZ-m6-5QE"/>
                                     </connections>
                                 </button>
-                                <button width="0.25" height="28" alignment="left" title=")" id="w4F-rZ-C6G">
+                                <button width="0.25" height="28" alignment="left" title=")" id="B9y-0B-z4U">
                                     <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <variation key="device=watch42mm" height="30"/>
                                     <connections>
-                                        <action selector="parentesisRight" destination="AgC-eL-Hgc" id="s1I-Dd-cnz"/>
+                                        <action selector="parentesisRight" destination="dQg-RE-cQQ" id="psU-NL-KBj"/>
                                     </connections>
                                 </button>
-                                <button width="0.25" height="28" alignment="left" title="π" id="nco-v3-IIQ">
+                                <button width="0.25" height="28" alignment="left" title="π" id="ESm-qc-50a">
                                     <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <variation key="device=watch42mm" height="30"/>
                                     <connections>
-                                        <action selector="pi" destination="AgC-eL-Hgc" id="upT-Tl-DjY"/>
+                                        <action selector="pi" destination="dQg-RE-cQQ" id="nME-10-ja5"/>
                                     </connections>
                                 </button>
-                                <button width="0.25" height="28" alignment="left" title="%" id="gal-b6-Ic9">
+                                <button width="0.25" height="28" alignment="left" title="%" id="Urf-Rn-sA2">
                                     <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="font" type="system" pointSize="12"/>
                                     <variation key="device=watch42mm" height="30"/>
                                     <connections>
-                                        <action selector="percent" destination="AgC-eL-Hgc" id="8dw-DI-4ej"/>
+                                        <action selector="percent" destination="dQg-RE-cQQ" id="jrY-TI-lQS"/>
                                     </connections>
                                 </button>
                             </items>
                         </group>
                     </items>
                     <connections>
-                        <outlet property="historyLabel" destination="UAV-cw-HJu" id="NnF-4M-DaQ"/>
-                        <outlet property="resultLabel" destination="hUf-g3-ghw" id="M1p-n8-r3i"/>
+                        <outlet property="historyLabel" destination="Ufe-fY-ip9" id="I6L-y7-1Fi"/>
+                        <outlet property="resultLabel" destination="NiK-xv-x4P" id="MMq-UN-ogN"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="34" y="29"/>
+            <point key="canvasLocation" x="293" y="29"/>
         </scene>
     </scenes>
 </document>
