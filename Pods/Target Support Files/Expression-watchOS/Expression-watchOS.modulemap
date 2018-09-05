@@ -1,0 +1,6 @@
+framework module Expression {
+  umbrella header "Expression-watchOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

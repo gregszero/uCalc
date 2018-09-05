@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		378D2EBD213F67BB00D2C8D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D2EBC213F67BB00D2C8D6 /* AppDelegate.swift */; };
+		378D2EBF213F67BB00D2C8D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D2EBE213F67BB00D2C8D6 /* ViewController.swift */; };
+		378D2EC2213F67BB00D2C8D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378D2EC0213F67BB00D2C8D6 /* Main.storyboard */; };
+		378D2EC4213F67BC00D2C8D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 378D2EC3213F67BC00D2C8D6 /* Assets.xcassets */; };
+		378D2EC7213F67BC00D2C8D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378D2EC5213F67BC00D2C8D6 /* LaunchScreen.storyboard */; };
+		378D2ECC213F67BD00D2C8D6 /* uCalc WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 378D2ECB213F67BD00D2C8D6 /* uCalc WatchKit App.app */; };
+		378D2ED2213F67BD00D2C8D6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378D2ED0213F67BD00D2C8D6 /* Interface.storyboard */; };
+		378D2ED4213F67BD00D2C8D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 378D2ED3213F67BD00D2C8D6 /* Assets.xcassets */; };
+		378D2EDB213F67BD00D2C8D6 /* uCalc WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 378D2EDA213F67BD00D2C8D6 /* uCalc WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		378D2EE0213F67BD00D2C8D6 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D2EDF213F67BD00D2C8D6 /* InterfaceController.swift */; };
+		378D2EE2213F67BD00D2C8D6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D2EE1213F67BD00D2C8D6 /* ExtensionDelegate.swift */; };
+		378D2EE4213F67BE00D2C8D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 378D2EE3213F67BE00D2C8D6 /* Assets.xcassets */; };
+		439AD2F4B8187C4983B2C34A /* Pods_uCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A275E5E7FA5593AD9A94BB /* Pods_uCalc.framework */; };
+		523191FED0096C5E790B2002 /* Pods_uCalc_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5FDE98DD4FE9BE1B74C92E /* Pods_uCalc_WatchKit_Extension.framework */; };
+		674AB508793A533D7D7DCBE2 /* Pods_uCalc_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B155FA56B6496913B04F6D3 /* Pods_uCalc_WatchKit_App.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		378D2ECD213F67BD00D2C8D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 378D2EB1213F67BB00D2C8D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 378D2ECA213F67BD00D2C8D6;
+			remoteInfo = "uCalc WatchKit App";
+		};
+		378D2EDC213F67BD00D2C8D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 378D2EB1213F67BB00D2C8D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 378D2ED9213F67BD00D2C8D6;
+			remoteInfo = "uCalc WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		378D2EEB213F67BE00D2C8D6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				378D2EDB213F67BD00D2C8D6 /* uCalc WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		378D2EEF213F67BE00D2C8D6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				378D2ECC213F67BD00D2C8D6 /* uCalc WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1575816B8E14CA831C2B890D /* Pods-uCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uCalc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uCalc/Pods-uCalc.debug.xcconfig"; sourceTree = "<group>"; };
+		378D2EB9213F67BB00D2C8D6 /* uCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		378D2EBC213F67BB00D2C8D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		378D2EBE213F67BB00D2C8D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		378D2EC1213F67BB00D2C8D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		378D2EC3213F67BC00D2C8D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		378D2EC6213F67BC00D2C8D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		378D2EC8213F67BC00D2C8D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		378D2ECB213F67BD00D2C8D6 /* uCalc WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "uCalc WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		378D2ED1213F67BD00D2C8D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		378D2ED3213F67BD00D2C8D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		378D2ED5213F67BD00D2C8D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		378D2EDA213F67BD00D2C8D6 /* uCalc WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "uCalc WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		378D2EDF213F67BD00D2C8D6 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		378D2EE1213F67BD00D2C8D6 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		378D2EE3213F67BE00D2C8D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		378D2EE5213F67BE00D2C8D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B5FDE98DD4FE9BE1B74C92E /* Pods_uCalc_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uCalc_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FE5222F7618A2A87D29CFC0 /* Pods-uCalc WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uCalc WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-uCalc WatchKit Extension/Pods-uCalc WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		6E5F7D83EDADC9C4F6D42E31 /* Pods-uCalc WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uCalc WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-uCalc WatchKit App/Pods-uCalc WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		7D240676756B4144EB9965FB /* Pods-uCalc WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uCalc WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uCalc WatchKit App/Pods-uCalc WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		8B155FA56B6496913B04F6D3 /* Pods_uCalc_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uCalc_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4990B0B43C5FC25638B6FAE /* Pods-uCalc WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uCalc WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uCalc WatchKit Extension/Pods-uCalc WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		E1A275E5E7FA5593AD9A94BB /* Pods_uCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3B65514AB9D507590A19658 /* Pods-uCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uCalc.release.xcconfig"; path = "Pods/Target Support Files/Pods-uCalc/Pods-uCalc.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		378D2EB6213F67BB00D2C8D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				439AD2F4B8187C4983B2C34A /* Pods_uCalc.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		378D2ED7213F67BD00D2C8D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				523191FED0096C5E790B2002 /* Pods_uCalc_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1577E1215E76D9B0882EDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674AB508793A533D7D7DCBE2 /* Pods_uCalc_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20AFD0EAC78FB887F98F0CA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1575816B8E14CA831C2B890D /* Pods-uCalc.debug.xcconfig */,
+				F3B65514AB9D507590A19658 /* Pods-uCalc.release.xcconfig */,
+				7D240676756B4144EB9965FB /* Pods-uCalc WatchKit App.debug.xcconfig */,
+				6E5F7D83EDADC9C4F6D42E31 /* Pods-uCalc WatchKit App.release.xcconfig */,
+				A4990B0B43C5FC25638B6FAE /* Pods-uCalc WatchKit Extension.debug.xcconfig */,
+				5FE5222F7618A2A87D29CFC0 /* Pods-uCalc WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		378D2EB0213F67BB00D2C8D6 = {
+			isa = PBXGroup;
+			children = (
+				378D2EBB213F67BB00D2C8D6 /* uCalc */,
+				378D2ECF213F67BD00D2C8D6 /* uCalc WatchKit App */,
+				378D2EDE213F67BD00D2C8D6 /* uCalc WatchKit Extension */,
+				378D2EBA213F67BB00D2C8D6 /* Products */,
+				20AFD0EAC78FB887F98F0CA8 /* Pods */,
+				9C0FEDE90C5ACD9FC84038D5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		378D2EBA213F67BB00D2C8D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				378D2EB9213F67BB00D2C8D6 /* uCalc.app */,
+				378D2ECB213F67BD00D2C8D6 /* uCalc WatchKit App.app */,
+				378D2EDA213F67BD00D2C8D6 /* uCalc WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		378D2EBB213F67BB00D2C8D6 /* uCalc */ = {
+			isa = PBXGroup;
+			children = (
+				378D2EBC213F67BB00D2C8D6 /* AppDelegate.swift */,
+				378D2EBE213F67BB00D2C8D6 /* ViewController.swift */,
+				378D2EC0213F67BB00D2C8D6 /* Main.storyboard */,
+				378D2EC3213F67BC00D2C8D6 /* Assets.xcassets */,
+				378D2EC5213F67BC00D2C8D6 /* LaunchScreen.storyboard */,
+				378D2EC8213F67BC00D2C8D6 /* Info.plist */,
+			);
+			path = uCalc;
+			sourceTree = "<group>";
+		};
+		378D2ECF213F67BD00D2C8D6 /* uCalc WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				378D2ED0213F67BD00D2C8D6 /* Interface.storyboard */,
+				378D2ED3213F67BD00D2C8D6 /* Assets.xcassets */,
+				378D2ED5213F67BD00D2C8D6 /* Info.plist */,
+			);
+			path = "uCalc WatchKit App";
+			sourceTree = "<group>";
+		};
+		378D2EDE213F67BD00D2C8D6 /* uCalc WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				378D2EDF213F67BD00D2C8D6 /* InterfaceController.swift */,
+				378D2EE1213F67BD00D2C8D6 /* ExtensionDelegate.swift */,
+				378D2EE3213F67BE00D2C8D6 /* Assets.xcassets */,
+				378D2EE5213F67BE00D2C8D6 /* Info.plist */,
+			);
+			path = "uCalc WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		9C0FEDE90C5ACD9FC84038D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1A275E5E7FA5593AD9A94BB /* Pods_uCalc.framework */,
+				8B155FA56B6496913B04F6D3 /* Pods_uCalc_WatchKit_App.framework */,
+				4B5FDE98DD4FE9BE1B74C92E /* Pods_uCalc_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		378D2EB8213F67BB00D2C8D6 /* uCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 378D2EF0213F67BE00D2C8D6 /* Build configuration list for PBXNativeTarget "uCalc" */;
+			buildPhases = (
+				4B6D70C02D79ED67EACBAD2E /* [CP] Check Pods Manifest.lock */,
+				378D2EB5213F67BB00D2C8D6 /* Sources */,
+				378D2EB6213F67BB00D2C8D6 /* Frameworks */,
+				378D2EB7213F67BB00D2C8D6 /* Resources */,
+				378D2EEF213F67BE00D2C8D6 /* Embed Watch Content */,
+				052130B73716FAEF0D6865B6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				378D2ECE213F67BD00D2C8D6 /* PBXTargetDependency */,
+			);
+			name = uCalc;
+			productName = uCalc;
+			productReference = 378D2EB9213F67BB00D2C8D6 /* uCalc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		378D2ECA213F67BD00D2C8D6 /* uCalc WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 378D2EEC213F67BE00D2C8D6 /* Build configuration list for PBXNativeTarget "uCalc WatchKit App" */;
+			buildPhases = (
+				158349412D409B8FDE4071C4 /* [CP] Check Pods Manifest.lock */,
+				378D2EC9213F67BD00D2C8D6 /* Resources */,
+				378D2EEB213F67BE00D2C8D6 /* Embed App Extensions */,
+				EB1577E1215E76D9B0882EDE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				378D2EDD213F67BD00D2C8D6 /* PBXTargetDependency */,
+			);
+			name = "uCalc WatchKit App";
+			productName = "uCalc WatchKit App";
+			productReference = 378D2ECB213F67BD00D2C8D6 /* uCalc WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		378D2ED9213F67BD00D2C8D6 /* uCalc WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 378D2EE8213F67BE00D2C8D6 /* Build configuration list for PBXNativeTarget "uCalc WatchKit Extension" */;
+			buildPhases = (
+				D893541197CE60E5FD940582 /* [CP] Check Pods Manifest.lock */,
+				378D2ED6213F67BD00D2C8D6 /* Sources */,
+				378D2ED7213F67BD00D2C8D6 /* Frameworks */,
+				378D2ED8213F67BD00D2C8D6 /* Resources */,
+				D5D8762271FAF1BC819C3310 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "uCalc WatchKit Extension";
+			productName = "uCalc WatchKit Extension";
+			productReference = 378D2EDA213F67BD00D2C8D6 /* uCalc WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		378D2EB1213F67BB00D2C8D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Sptd;
+				TargetAttributes = {
+					378D2EB8213F67BB00D2C8D6 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					378D2ECA213F67BD00D2C8D6 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					378D2ED9213F67BD00D2C8D6 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 378D2EB4213F67BB00D2C8D6 /* Build configuration list for PBXProject "uCalc" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 378D2EB0213F67BB00D2C8D6;
+			productRefGroup = 378D2EBA213F67BB00D2C8D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				378D2EB8213F67BB00D2C8D6 /* uCalc */,
+				378D2ECA213F67BD00D2C8D6 /* uCalc WatchKit App */,
+				378D2ED9213F67BD00D2C8D6 /* uCalc WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		378D2EB7213F67BB00D2C8D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				378D2EC7213F67BC00D2C8D6 /* LaunchScreen.storyboard in Resources */,
+				378D2EC4213F67BC00D2C8D6 /* Assets.xcassets in Resources */,
+				378D2EC2213F67BB00D2C8D6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		378D2EC9213F67BD00D2C8D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				378D2ED4213F67BD00D2C8D6 /* Assets.xcassets in Resources */,
+				378D2ED2213F67BD00D2C8D6 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		378D2ED8213F67BD00D2C8D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				378D2EE4213F67BE00D2C8D6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		052130B73716FAEF0D6865B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-uCalc/Pods-uCalc-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Expression-iOS/Expression.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expression.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-uCalc/Pods-uCalc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		158349412D409B8FDE4071C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-uCalc WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B6D70C02D79ED67EACBAD2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-uCalc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5D8762271FAF1BC819C3310 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-uCalc WatchKit Extension/Pods-uCalc WatchKit Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Expression-watchOS/Expression.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expression.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-uCalc WatchKit Extension/Pods-uCalc WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D893541197CE60E5FD940582 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-uCalc WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		378D2EB5213F67BB00D2C8D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				378D2EBF213F67BB00D2C8D6 /* ViewController.swift in Sources */,
+				378D2EBD213F67BB00D2C8D6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		378D2ED6213F67BD00D2C8D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				378D2EE2213F67BD00D2C8D6 /* ExtensionDelegate.swift in Sources */,
+				378D2EE0213F67BD00D2C8D6 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		378D2ECE213F67BD00D2C8D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 378D2ECA213F67BD00D2C8D6 /* uCalc WatchKit App */;
+			targetProxy = 378D2ECD213F67BD00D2C8D6 /* PBXContainerItemProxy */;
+		};
+		378D2EDD213F67BD00D2C8D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 378D2ED9213F67BD00D2C8D6 /* uCalc WatchKit Extension */;
+			targetProxy = 378D2EDC213F67BD00D2C8D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		378D2EC0213F67BB00D2C8D6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				378D2EC1213F67BB00D2C8D6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		378D2EC5213F67BC00D2C8D6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				378D2EC6213F67BC00D2C8D6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		378D2ED0213F67BD00D2C8D6 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				378D2ED1213F67BD00D2C8D6 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		378D2EE6213F67BE00D2C8D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		378D2EE7213F67BE00D2C8D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		378D2EE9213F67BE00D2C8D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4990B0B43C5FC25638B6FAE /* Pods-uCalc WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 253VF8J9M2;
+				INFOPLIST_FILE = "uCalc WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gregorymendes.uCalc.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		378D2EEA213F67BE00D2C8D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FE5222F7618A2A87D29CFC0 /* Pods-uCalc WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 253VF8J9M2;
+				INFOPLIST_FILE = "uCalc WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gregorymendes.uCalc.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		378D2EED213F67BE00D2C8D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D240676756B4144EB9965FB /* Pods-uCalc WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 253VF8J9M2;
+				IBSC_MODULE = uCalc_WatchKit_Extension;
+				INFOPLIST_FILE = "uCalc WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gregorymendes.uCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		378D2EEE213F67BE00D2C8D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E5F7D83EDADC9C4F6D42E31 /* Pods-uCalc WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 253VF8J9M2;
+				IBSC_MODULE = uCalc_WatchKit_Extension;
+				INFOPLIST_FILE = "uCalc WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gregorymendes.uCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		378D2EF1213F67BE00D2C8D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1575816B8E14CA831C2B890D /* Pods-uCalc.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 253VF8J9M2;
+				INFOPLIST_FILE = uCalc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gregorymendes.uCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		378D2EF2213F67BE00D2C8D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3B65514AB9D507590A19658 /* Pods-uCalc.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 253VF8J9M2;
+				INFOPLIST_FILE = uCalc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gregorymendes.uCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		378D2EB4213F67BB00D2C8D6 /* Build configuration list for PBXProject "uCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				378D2EE6213F67BE00D2C8D6 /* Debug */,
+				378D2EE7213F67BE00D2C8D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		378D2EE8213F67BE00D2C8D6 /* Build configuration list for PBXNativeTarget "uCalc WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				378D2EE9213F67BE00D2C8D6 /* Debug */,
+				378D2EEA213F67BE00D2C8D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		378D2EEC213F67BE00D2C8D6 /* Build configuration list for PBXNativeTarget "uCalc WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				378D2EED213F67BE00D2C8D6 /* Debug */,
+				378D2EEE213F67BE00D2C8D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		378D2EF0213F67BE00D2C8D6 /* Build configuration list for PBXNativeTarget "uCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				378D2EF1213F67BE00D2C8D6 /* Debug */,
+				378D2EF2213F67BE00D2C8D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 378D2EB1213F67BB00D2C8D6 /* Project object */;
+}
